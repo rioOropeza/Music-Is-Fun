@@ -7,10 +7,24 @@ const itunesService = new ItunesService()
 function drawSongs(results) {
   console.log(results)
   //YOUR CODING STARTS HERE
-
-
+  let template = ""
+  results.forEach(song => {
+    template += `
+    <div class="card" style="width: 20rem;">
+    <img src="${song.albumArt}">
+    <h5>${song.title} ${song.artist}${song.collection}</h5>
+   <p>${song.price}</p>
+    <audio controls src="${song.preview}"></audio>
+    </div>
+    `
+  });
+  document.getElementById('songs').innerHTML = template
 
 }
+
+
+
+
 
 
 //PUBLIC

@@ -1,0 +1,12 @@
+.background { 
+    background-image: url("./app/assets/akshay-chauhan-614025-unsplash.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgColor{
+  background:rgba(255, 255, 255, 0.555)
+}
