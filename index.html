@@ -13,25 +13,31 @@
 </head>
 
 <body class="background">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col mt-3 mb-3">
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col">
+            <div class="col-4">
+                <div class="tenor-gif-embed" data-postid="12501774" data-share-method="host" data-width="45%"
+                    data-aspect-ratio="1.1666666666666667"><a href="https://tenor.com/view/brown-cute-music-line-bear-gif-12501774">Brown
+                        Cute GIF</a> from <a href="https://tenor.com/search/brown-gifs">Brown
+                        GIFs</a></div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                         <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
                         <button type="submit" class="btn btn-danger" id="get-music-button">Get Music</button>
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="col">
-            <div id="songs" class="bgColor d-flex flex-wrap justify-content-around">
+            <div class="col-8">
+                <div style="height:650px;width:900px;overflow:auto;">
+                    <div id="songs" class="bgColor d-flex flex-wrap justify-content-around">
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
